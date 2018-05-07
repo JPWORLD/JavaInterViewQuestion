@@ -1,5 +1,7 @@
 package generalQuestion;
 
+import java.util.Scanner;
+
 public class CountOccurrences {
 	static final int MAX_CHAR = 256;
 	
@@ -24,13 +26,26 @@ public class CountOccurrences {
 					find++;
 			}
 			if (find == 1)
-				System.out.print("Number of Occurrence of" + find +"");
+				System.out.print(" Number of Occurrence of " + str.charAt(i) + " is: "+ count[str.charAt(i)]+'\n');
 		}
 	}
 
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
 		// TODO Auto-generated method stub
-		
+		Scanner sc = new Scanner (System.in);
+		String str = "this is the test case";
+		getOccuringChar(str);
 	}
 
 }
+
+/*
+ *  Number of Occurrence of h is: 2
+* Number of Occurrence of i is: 2
+ Number of Occurrence of s is: 4
+ Number of Occurrence of   is: 4
+ Number of Occurrence of e is: 3
+ Number of Occurrence of c is: 1
+ Number of Occurrence of a is: 1
+*/
